@@ -1,1 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#041126" />
+  <meta name="description" content="八乃ぺんたの3Dモデル制作。VRoid＋Blender、フルスクラッチ、キャラクターデザインから映像まで、用途に合う制作方法をご提案します。" />
+  <title>八乃ぺんた｜3D Model Studio</title>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">3D model production & direction</p>
+        <h1>迷っている時間を、<span>動き出すモデルへ。</span></h1>
+        <p class="hero-lead">配信、VRChat、ライブ、映像。使い方から逆算して、<br>あなたに必要な3Dモデルの形を一緒に整理します。</p>
+        <div class="hero-actions">
+          <a class="button" href="#methods">方式の違いを見る <span class="arrow">↓</span></a>
+          <a class="button secondary" href="contact.html">30秒で相談を整理</a>
+        </div>
+      </div>
+      <div class="viewer-shell" aria-label="3Dアバタービューワー">
+        <div class="viewer">
+          <div class="viewer-top">
+            <span class="live-label">INTERACTIVE 3D</span>
+            <span class="viewer-note">カーソルを動かしてみてください</span>
+          </div>
+          <canvas id="avatar-canvas" aria-label="カーソルやカメラに反応する3Dモデル"></canvas>
+          <video id="camera-preview" class="camera-preview" muted playsinline aria-label="カメラプレビュー"></video>
+          <div class="viewer-controls">
+            <button class="camera-button" id="camera-toggle" type="button">カメラトラッキングを試す</button>
+            <span class="tracking-status" id="tracking-status">カメラ映像は保存されません</span>
+          </div>
+        </div>
+        <div class="viewer-chip">DEMO MODEL<br>瞬き・アイドルモーション実装</div>
+      </div>
+    </section>
 
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="section-kicker">About</p>
+        <h2 class="section-title reveal">「何を頼めばいい？」から始められる<br><em>伴走型の3D制作</em>です。</h2>
+        <div class="about-grid">
+          <div class="about-sticky reveal">
+            <p class="statement">見た目の完成度だけでなく、<strong>使う場所でちゃんと動くこと</strong>まで設計します。</p>
+            <p class="section-intro">専門用語が分からなくても大丈夫。用途・予算・こだわりを伺い、必要な工程と不要な工程を整理してから制作します。</p>
+          </div>
+          <div class="feature-list">
+            <article class="feature-card reveal"><div class="feature-number">01</div><div><h3>用途から方式を選ぶ</h3><p>配信、VRChat、MV、リアルイベントなど、実際の運用に合わせてVRoid＋Blenderとフルスクラッチを比較します。</p></div></article>
+            <article class="feature-card reveal"><div class="feature-number">02</div><div><h3>前工程から一緒に整理</h3><p>キャラクターデザイン、三面図、衣装構造、可動域、使用ツールまで、制作前の「決めきれない」を仕様へ変えます。</p></div></article>
+            <article class="feature-card reveal"><div class="feature-number">03</div><div><h3>公開後まで見据える</h3><p>モデル単体だけでなく、キービジュアルやPVなど、初お披露目に必要な見せ方も必要に応じてご提案します。</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method-section" id="methods">
+      <div class="section-inner">
+        <p class="section-kicker">Choose your method</p>
+        <h2 class="section-title reveal">2つの制作方式。<br>正解は、<em>使い方</em>で変わります。</h2>
+        <p class="section-intro reveal">どちらが上という比較ではありません。見た目・運用・予算の優先順位に合わせて、無理のない方式をご提案します。</p>
+        <div class="method-grid">
+          <article class="method-card recommended reveal">
+            <span class="method-tag">FLEXIBLE & FAST</span>
+            <h3>VRoid ＋ Blender</h3>
+            <p class="price">30万円〜 ｜ 標準例 30〜40万円</p>
+            <ul><li>VRoidの衣装運用とBlenderの造形力を両立</li><li>配信中心で衣装展開も続けたい方に</li><li>髪・衣装・装飾をBlenderで作り込める</li><li>比較的スピーディーに始めやすい</li></ul>
+            <p class="method-best"><span>向いているケース：</span> VTuber配信／定期的な衣装替え／品質と予算のバランス</p>
+          </article>
+          <article class="method-card reveal">
+            <span class="method-tag">ORIGINAL & PRECISE</span>
+            <h3>フルスクラッチ</h3>
+            <p class="price">80万円〜 ｜ 標準例 80〜100万円</p>
+            <ul><li>体型・輪郭・衣装構造までゼロから設計</li><li>原案のシルエットを細部まで再現</li><li>VRChat最適化や独自ギミックにも対応</li><li>ブランドの核になる唯一性を重視</li></ul>
+            <p class="method-best"><span>向いているケース：</span> 造形への強いこだわり／VRChat／ライブ・映像での存在感</p>
+          </article>
+        </div>
+        <div class="service-strip reveal" aria-label="10月以降の提供内容">
+          <div><strong>Character</strong>キャラデザイン</div><div><strong>Illustration</strong>一枚絵・三面図</div><div><strong>3D Model</strong>2方式のモデル制作</div><div><strong>Movie</strong>PV・告知映像</div><div><strong>Direction</strong>仕様・資料・進行</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-inner">
+        <div class="section-head"><div><p class="section-kicker">News</p><h2 class="section-title">お知らせ</h2></div><a class="text-link" href="news.html">すべて見る →</a></div>
+        <div class="cards">
+          <article class="news-card reveal"><div class="news-meta"><time datetime="2026-10-01">2026.10.01</time><span class="tag">INFO</span></div><h3>10月より制作内容・料金体系を改定します</h3><p>前工程の伴走を強化し、用途に合う方式選びから支援します。</p></article>
+          <article class="news-card reveal"><div class="news-meta"><time datetime="2026-09-18">2026.09.18</time><span class="tag">WEB</span></div><h3>制作サイトのプライベートプレビューを開始</h3><p>3Dビューワーと相談整理ツールを実装しました。</p></article>
+          <article class="news-card reveal"><div class="news-meta"><time datetime="2026-09-01">2026.09.01</time><span class="tag">SLOT</span></div><h3>年内制作枠のご相談を受付中です</h3><p>現在2〜3件のご相談枠をご用意しています。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works-section" id="works">
+      <div class="section-inner">
+        <div class="section-head"><div><p class="section-kicker">Works</p><h2 class="section-title">制作のかたち</h2></div><a class="text-link" href="works.html">制作一覧を見る →</a></div>
+        <div class="cards">
+          <article class="work-card reveal"><div class="work-art"><span class="placeholder-label">WORK IMAGE</span></div><div class="work-body"><h3>配信向け3Dモデル</h3><p>表情・シルエット・衣装展開まで、画面映えと運用を両立。</p><div class="work-tags"><span>VRoid</span><span>Blender</span><span>VRM</span></div></div></article>
+          <article class="work-card reveal"><div class="work-art pink"><span class="placeholder-label">WORK IMAGE</span></div><div class="work-body"><h3>オリジナルフルスクラッチ</h3><p>体型や衣装構造まで、キャラクターの魅力から逆算して設計。</p><div class="work-tags"><span>Full scratch</span><span>Unity</span><span>VRChat</span></div></div></article>
+          <article class="work-card reveal"><div class="work-art ice"><span class="placeholder-label">WORK IMAGE</span></div><div class="work-body"><h3>お披露目クリエイティブ</h3><p>モデルをいちばん魅力的に見せる一枚絵・PVまで一貫して制作。</p><div class="work-tags"><span>Art</span><span>Movie</span><span>Direction</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-inner">
+        <div class="section-head"><div><p class="section-kicker">Portfolio</p><h2 class="section-title reveal">完成物だけでなく、<br><em>判断のプロセス</em>まで。</h2><p class="section-intro">用途に合わせて、どのような設計・調整を行ったのかをケーススタディ形式でご紹介します。</p></div><a class="text-link" href="portfolio.html">事例を詳しく見る →</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="profile">
+      <div class="section-inner profile-layout">
+        <div class="profile-visual reveal" aria-label="八乃ぺんた プロフィールビジュアル"></div>
+        <div class="profile-copy reveal"><p class="section-kicker">Profile</p><h3>八乃ぺんた</h3><p class="profile-role">3D Modeler / VTuber / Creative Director 👻🔥</p><p>2021年から3Dモデル制作を開始。VRoid＋Blender、フルスクラッチ、Unity・VRM調整まで、30体以上の制作経験をもとに、キャラクターが活動を始めるための形を整えています。</p><p>動画編集・イラスト・配信活動の経験を活かし、「作って終わり」ではなく、初お披露目や継続運用まで見据えた提案を大切にしています。</p><div class="profile-stats"><div class="stat"><strong>30+</strong><span>3D MODELS</span></div><div class="stat"><strong>2021—</strong><span>PRODUCTION</span></div><div class="stat"><strong>3D＋</strong><span>ART / MOVIE</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-inner contact-panel reveal"><div><p class="section-kicker" style="color:#69e2ff">Contact</p><h2>まだ決まっていなくても、<br>相談できます。</h2><p>用途・衣装展開・こだわりを選ぶだけで、相談時に伝える内容とおすすめ方式を整理できます。</p></div><a class="button light" href="contact.html">相談内容を整理する <span class="arrow">→</span></a></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module">import { boot } from '/src/site-components.js'; boot('home');</script>
+  <script type="module" src="/src/shared.js"></script>
+  <script type="module" src="/src/viewer.js"></script>
+</body>
+</html>
