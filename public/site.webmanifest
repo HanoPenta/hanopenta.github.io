@@ -1,0 +1,21 @@
+{
+  "name": "八乃ぺんた 3D Model Studio",
+  "short_name": "八乃ぺんた",
+  "description": "VTuber・VRChat向け3Dモデル制作",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f7f7",
+  "theme_color": "#131313",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
