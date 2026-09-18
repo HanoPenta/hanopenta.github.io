@@ -26,7 +26,7 @@ export const footer = () => `
           <a href="news.html">News</a><a href="works.html">Works</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
         </div>
       </div>
-      <div>© 2026 HACHINO PENTA. PRIVATE PREVIEW.</div>
+      <div>© 2026 HACHINO PENTA. OFFICIAL SITE.</div>
     </div>
   </footer>`;
 
