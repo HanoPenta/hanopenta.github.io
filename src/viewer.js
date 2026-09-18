@@ -17,11 +17,11 @@ if (canvas && viewer) {
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.15;
 
-  scene.add(new THREE.HemisphereLight(0xbce9ff, 0x071326, 3.2));
-  const key = new THREE.DirectionalLight(0x8eeaff, 6);
+  scene.add(new THREE.HemisphereLight(0xf7f7f7, 0x131313, 3.2));
+  const key = new THREE.DirectionalLight(0xd2ff52, 6);
   key.position.set(4, 5, 6);
   scene.add(key);
-  const rim = new THREE.DirectionalLight(0xff5bcf, 5);
+  const rim = new THREE.DirectionalLight(0x1c46f5, 5);
   rim.position.set(-5, 2, -2);
   scene.add(rim);
 
@@ -31,11 +31,11 @@ if (canvas && viewer) {
 
   const materials = {
     skin: new THREE.MeshStandardMaterial({ color: 0xf7d9d7, roughness: .68 }),
-    hair: new THREE.MeshStandardMaterial({ color: 0x0b1e42, roughness: .48, metalness: .12 }),
-    blue: new THREE.MeshStandardMaterial({ color: 0x0f7aff, roughness: .4, metalness: .18 }),
-    dark: new THREE.MeshStandardMaterial({ color: 0x041126, roughness: .42, metalness: .3 }),
-    cyan: new THREE.MeshStandardMaterial({ color: 0x64e6ff, roughness: .24, emissive: 0x0d7895, emissiveIntensity: .55 }),
-    pink: new THREE.MeshStandardMaterial({ color: 0xf45acb, roughness: .28, emissive: 0x7c135f, emissiveIntensity: .3 }),
+    hair: new THREE.MeshStandardMaterial({ color: 0x131313, roughness: .48, metalness: .12 }),
+    blue: new THREE.MeshStandardMaterial({ color: 0x1c46f5, roughness: .4, metalness: .18 }),
+    dark: new THREE.MeshStandardMaterial({ color: 0x131313, roughness: .42, metalness: .3 }),
+    cyan: new THREE.MeshStandardMaterial({ color: 0xd2ff52, roughness: .24, emissive: 0x5f7900, emissiveIntensity: .55 }),
+    pink: new THREE.MeshStandardMaterial({ color: 0xd2ff52, roughness: .28, emissive: 0x5f7900, emissiveIntensity: .3 }),
     white: new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: .45 }),
   };
 
@@ -110,7 +110,7 @@ if (canvas && viewer) {
 
   const ring = new THREE.Mesh(
     new THREE.TorusGeometry(1.58, .018, 8, 96),
-    new THREE.MeshBasicMaterial({ color: 0x69e2ff, transparent: true, opacity: .46 })
+    new THREE.MeshBasicMaterial({ color: 0xd2ff52, transparent: true, opacity: .46 })
   );
   ring.rotation.x = Math.PI / 2;
   ring.position.y = -2.85;
