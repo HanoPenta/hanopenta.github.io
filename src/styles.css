@@ -111,6 +111,9 @@ main, section, article, aside, form, div { min-width: 0; }
   position: relative;
   z-index: 2;
   margin: 0;
+}
+.hero-media {
+  position: relative;
   overflow: hidden;
   aspect-ratio: 1.38;
   border: 3px solid #131313;
@@ -118,8 +121,11 @@ main, section, article, aside, form, div { min-width: 0; }
   background: #1c46f5;
   box-shadow: 12px 12px 0 #d2ff52, 18px 18px 0 #131313;
 }
-.hero-visual img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
-.hero-visual figcaption { position: absolute; left: 18px; bottom: 16px; padding: 7px 12px; color: #131313; background: #d2ff52; border: 2px solid #131313; font-size: 10px; font-weight: 900; letter-spacing: .13em; }
+.hero-media video { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.hero-media-label { position: absolute; left: 18px; bottom: 16px; padding: 7px 12px; color: #131313; background: #d2ff52; border: 2px solid #131313; font-size: 10px; font-weight: 900; letter-spacing: .13em; }
+.hero-visual figcaption { margin-top: 24px; color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-align: right; }
+.hero-visual figcaption a { margin-left: 8px; color: #d2ff52; border-bottom: 1px solid currentColor; font-weight: 900; }
+.hero-visual figcaption a:hover { color: #fff; }
 
 .section { position: relative; padding: clamp(86px, 10vw, 150px) clamp(24px, 7vw, 112px); }
 .section-inner { width: min(1180px, 100%); margin: 0 auto; }
@@ -170,6 +176,9 @@ main, section, article, aside, form, div { min-width: 0; }
 .works-section { background: #eaf2ff; }
 .work-card { overflow: hidden; }
 .work-art { position: relative; aspect-ratio: 4/3; overflow: hidden; background: linear-gradient(135deg, #06162f, #1156bd 55%, #5cd9ff); }
+.work-art.has-image::before, .work-art.has-image::after { display: none; }
+.work-art img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .35s ease; }
+.work-card:hover .work-art img { transform: scale(1.035); }
 .work-art::before, .work-art::after { content: ""; position: absolute; border-radius: 50%; filter: blur(2px); }
 .work-art::before { width: 46%; aspect-ratio: 1; left: 27%; top: 13%; background: linear-gradient(155deg, #e9f7ff, #75c7ff); box-shadow: 0 0 0 14px rgba(2,13,31,.35); }
 .work-art::after { width: 80%; height: 62%; left: 10%; bottom: -36%; background: linear-gradient(90deg, #0b2f71, #189dec, #d2ff52); border-radius: 50% 50% 0 0; }
@@ -610,7 +619,8 @@ body {
   .hero-lead br { display: none; }
   .hero-actions { display: grid; grid-template-columns: 1fr; }
   .hero-actions .button { width: 100%; }
-  .hero-visual { aspect-ratio: 1.2; border-radius: 10px 10px 64px 10px; }
+  .hero-media { aspect-ratio: 1.2; border-radius: 10px 10px 64px 10px; }
+  .hero-visual figcaption { margin-top: 20px; }
   .section { padding: 76px max(20px, env(safe-area-inset-right)) 76px max(20px, env(safe-area-inset-left)); }
   .section-head { align-items: flex-start; flex-direction: column; }
   .method-grid, .cards, .works-grid { grid-template-columns: 1fr; }

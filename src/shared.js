@@ -91,7 +91,7 @@ if (form) {
     const requesterName = new FormData(form).get('requesterName') || 'お名前未入力';
     const subject = `【お問い合わせ】${requesterName}様`;
     status.textContent = 'メールアプリを開きます。内容をご確認のうえ送信してください。';
-    window.location.href = `mailto:handlename.penguin@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(summary.value)}`;
+    window.location.href = `mailto:kinoshita.yuto.mg@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(summary.value)}`;
   });
   updateRecommendation();
 }
