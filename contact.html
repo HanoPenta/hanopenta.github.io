@@ -6,21 +6,28 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"><link rel="manifest" href="./site.webmanifest">
   <meta property="og:locale" content="ja_JP"><meta property="og:type" content="website"><meta property="og:site_name" content="八乃ぺんた 3D Model Studio"><meta property="og:title" content="お問い合わせ・お見積り｜八乃ぺんた"><meta property="og:description" content="3Dモデル制作のお見積りや取材などのご相談はこちらから。"><meta property="og:url" content="https://hanopenta.github.io/contact.html"><meta property="og:image" content="https://hanopenta.github.io/ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="八乃ぺんた 3D Model Studio"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="お問い合わせ・お見積り｜八乃ぺんた"><meta name="twitter:description" content="3Dモデル制作のお見積りや取材などのご相談はこちらから。"><meta name="twitter:image" content="https://hanopenta.github.io/ogp.png">
   <title>お問い合わせ・お見積り｜八乃ぺんた</title><script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"お問い合わせ・お見積り｜八乃ぺんた","description":"3Dモデル制作のお見積りや取材などを相談できるページ。","url":"https://hanopenta.github.io/contact.html","isPartOf":{"@type":"WebSite","name":"八乃ぺんた 3D Model Studio","url":"https://hanopenta.github.io/"}}</script>
-  <script type="module" crossorigin src="./assets/contact-CxxKD3vS.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/shared-B3vchaGK.js">
-  <link rel="stylesheet" crossorigin href="./assets/shared-DtuBVM6P.css">
+  
+  
+  
+  <script type="module" src="./src/shared.js"></script>
 </head>
-<body>
+<body data-page="contact">
   <div id="site-header"></div><main id="main">
     <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Estimate & inquiry</p><h1>CONTACT</h1><p>用途・衣装展開・こだわりを選ぶだけで、簡単にお見積りが可能です。その他取材などもこちらからどうぞ。</p></div></section>
     <section class="page-content"><div class="page-content-inner contact-layout">
       <aside class="contact-guide reveal"><p class="section-kicker">How it works</p><h2>お問い合わせから<br>制作まで</h2><ol class="process-list"><li><span>01</span><div><strong>必要事項を入力</strong><p>分かる範囲だけで大丈夫です。</p></div></li><li><span>02</span><div><strong>おすすめ方式と内容を確認</strong><p>回答から相談メモを自動で整理します。</p></div></li><li><span>03</span><div><strong>メールアプリから送信</strong><p>内容を確認し、そのまま送信してください。</p></div></li><li><span>04</span><div><strong>ヒアリング・お見積り</strong><p>用途や仕様を確認してご提案します。</p></div></li><li><span>05</span><div><strong>内容確定後に制作開始</strong><p>スケジュールを共有して進行します。</p></div></li></ol></aside>
-      <form class="contact-form" id="project-planner"><div class="form-grid">
+      <form class="contact-form" id="project-planner" novalidate><div class="form-grid">
         <div class="field"><label for="requester-name">依頼者名 *</label><input id="requester-name" name="requesterName" autocomplete="name" required placeholder="例：八乃ぺんた"></div><div class="field"><label for="requester-email">連絡先メールアドレス *</label><input id="requester-email" name="requesterEmail" type="email" autocomplete="email" required placeholder="name@example.com"></div>
         <div class="field"><label for="use">主な用途</label><select id="use" name="use"><option value="">選択してください</option><option value="stream">配信・VTuber</option><option value="vrchat">VRChat</option><option value="video">映像・MV</option><option value="event">イベント・ライブ</option><option value="other">その他</option></select></div><div class="field"><label for="change">衣装展開</label><select id="change" name="change"><option value="">選択してください</option><option value="often">頻繁に追加したい</option><option value="sometimes">年に数回</option><option value="rare">ほぼ固定</option></select></div>
         <div class="field"><label for="detail">いちばん大切なこと</label><select id="detail" name="detail"><option value="">選択してください</option><option value="balanced">品質と予算のバランス</option><option value="high">造形・体型へのこだわり</option><option value="speed">公開時期・スピード</option></select></div><div class="field"><label for="budget">予算の目安</label><select id="budget" name="budget"><option value="">選択してください</option><option>30〜50万円</option><option>50〜80万円</option><option>80〜100万円</option><option>100万円以上</option><option>相談して決めたい</option></select></div>
         <div class="field full"><label for="timing">希望時期</label><input id="timing" name="timing" placeholder="例：2027年春頃、未定"></div><div class="field full"><label for="note">こだわり・困っていること</label><textarea id="note" name="note" placeholder="例：身体のスタイルを大切にしたい／VRChatでも使いたい／取材について相談したい"></textarea><span class="form-hint">三面図や設定画があればGoogleドライブで共有してください。分からない項目は空欄のままで大丈夫です。</span></div>
-      </div><div class="recommendation" id="method-recommendation" aria-live="polite"></div><div class="field full"><label for="request-summary">自動作成されたお問い合わせ内容</label><textarea id="request-summary" name="summary" readonly></textarea></div><button class="button" type="submit">メールで送信する</button><p class="copy-status" id="copy-status" aria-live="polite"></p><p class="form-hint">送信ボタンを押すと、宛先を設定したメールアプリが開きます。この画面から自動送信はされません。</p></form>
+      </div><div class="recommendation" id="method-recommendation" aria-live="polite"></div><div class="field full"><label for="request-summary">自動作成されたお問い合わせ内容</label><textarea id="request-summary" name="summary" readonly></textarea></div><div class="contact-methods" aria-label="お問い合わせ方法"><button class="button" type="button" data-contact-method="site">このサイトから送信</button><button class="button secondary" type="button" data-contact-method="gmail">Gmailで送信</button><button class="button secondary" type="button" data-contact-method="mail">メールアプリで送信</button></div><p class="copy-status" id="copy-status" aria-live="polite"></p><p class="form-hint">サイトからの送信にはFormspreeを利用します。Gmailまたはメールアプリも選べます。</p></form>
     </div></section>
+<section class="faq-section" aria-labelledby="faq-title"><div class="section-kicker">FAQ</div><h2 id="faq-title">よくあるご質問</h2><div class="faq-list">
+<details><summary>制作チーム内でデータや資料を共有しますか？</summary><p>制作に必要な範囲で、担当スタッフと資料・データを共有する場合があります。秘密保持や取り扱いのご希望は、ご相談時にお知らせください。</p></details>
+<details><summary>商用利用やモデルの改造はできますか？</summary><p>商用利用・改造ともに可能です。利用範囲や納品データの内容は、ご依頼内容に合わせてお見積り時に確認します。</p></details>
+<details><summary>成人向けの活動にも使用できますか？</summary><p>活動内容による利用制限はありません。成人向けコンテンツを公開する場合は、各プラットフォームのルールに従い、適切なゾーニングをお願いします。</p></details>
+<details><summary>制作開始後にキャンセルした場合、料金はかかりますか？</summary><p>制作着手後にキャンセルされる場合は、キャンセル料として制作費の50％を頂戴します。契約内容と進行状況を確認のうえ精算いたします。</p></details>
+</div></section>
   </main><div id="site-footer"></div>
 </body></html>
